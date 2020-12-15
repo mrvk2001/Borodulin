@@ -1,0 +1,32 @@
+﻿<Window x:Class="LSchool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LSchool"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <Grid>
+        <StackPanel Margin="5" Orientation="Horizontal" OpacityMask="White" Background="White">
+            <Image Source="school_logo.png" Width="120" Height="120"/>
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,32" Background="White">
+                <Label HorizontalAlignment="Center" Content="Логин" MinHeight="25" FontFamily="Comic Sans MS" FontSize="14" Foreground="Black" Width="62"></Label>
+                <Label Content="Пароль" MinHeight="25" FontFamily="Comic Sans MS" FontSize="14" Foreground="Black"></Label>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Height="90" VerticalAlignment="Center" Margin="0" Background="White">
+                <TextBox Margin="3" Height="22"/>
+                <TextBox Margin="3" Height="22" Width="190"/>
+                <DockPanel>
+                    <Button Margin="0,0,5,0" Background="#FFE7FABF" Content="Войти" FontFamily="Comic Sans MS" FontSize="10"/>
+                    <Button Margin="0,0,5,0" Background="White" Content="Регистрация" FontFamily="Comic Sans MS" FontSize="10"/>
+                    <Button Background="White" Content="Забыли пароль" FontFamily="Comic Sans MS" FontSize="10"/>
+                </DockPanel>
+                <Label HorizontalAlignment="Center" Content="Школа языков 'Леарн' " FontFamily="Comic Sans MS" FontSize="7" Background="White" Foreground="#FF04A0FF"></Label>
+            </StackPanel>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>
